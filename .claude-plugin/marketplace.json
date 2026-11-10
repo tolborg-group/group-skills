@@ -1,0 +1,26 @@
+{
+  "name": "tolborg-group",
+  "owner": {
+    "name": "Tolborg Group"
+  },
+  "metadata": {
+    "description": "Shared Claude Code skills for the group: git help, paper reading, LaTeX troubleshooting, and more."
+  },
+  "plugins": [
+    {
+      "name": "git",
+      "source": "./plugins/git",
+      "description": "Beginner-friendly help with saving and sharing work via git, teaching the commands along the way."
+    },
+    {
+      "name": "reading",
+      "source": "./plugins/reading",
+      "description": "Help with reading papers, e.g. an examiner-style interview to test your understanding."
+    },
+    {
+      "name": "latex",
+      "source": "./plugins/latex",
+      "description": "Help with LaTeX, e.g. diagnosing compilation errors."
+    }
+  ]
+}

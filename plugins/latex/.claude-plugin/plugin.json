@@ -1,0 +1,7 @@
+{
+  "name": "latex",
+  "description": "Help with LaTeX, e.g. diagnosing compilation errors.",
+  "author": {
+    "name": "Tolborg Group"
+  }
+}

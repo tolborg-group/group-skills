@@ -4,15 +4,17 @@ Shared skills for Claude Code (and other tools that support the
 [Agent Skills](https://agentskills.io) standard), organised as a Claude Code
 plugin marketplace.
 
-## Plugins
+## Skills
 
-| Plugin    | What it is for                                              |
-|-----------|-------------------------------------------------------------|
-| `git`     | Saving and sharing work with git, teaching the commands     |
-| `reading` | Reading papers, e.g. an examiner-style interview            |
-| `latex`   | LaTeX help, e.g. diagnosing compilation errors              |
+| Skill                      | What it does                                                         |
+|----------------------------|----------------------------------------------------------------------|
+| `/git:sync`                | Commits, pulls and pushes to get a repo up to date, explaining each git command |
+| `/reading:paper-interview` | Questions you about a paper, like a fair examiner, to test your understanding   |
+| `/latex:diagnose`          | Finds out why a LaTeX document does not compile and fixes it                    |
 
-Skills are invoked as `/plugin:skill`, e.g. `/git:sync`.
+Each skill lives in a plugin (`git`, `reading`, `latex`) that is installed
+separately. Claude also picks a skill up on its own when you describe the
+task, e.g. "quiz me on this paper".
 
 ## Install
 
@@ -21,6 +23,8 @@ In a terminal:
 ```bash
 claude plugin marketplace add tolborg-group/group-skills
 claude plugin install git@tolborg-group
+claude plugin install reading@tolborg-group
+claude plugin install latex@tolborg-group
 ```
 
 Or, inside Claude Code, run `/plugin` and browse the marketplace.

@@ -11,8 +11,9 @@ plugin marketplace.
 | `/git:sync`                | Commits, pulls and pushes to get a repo up to date, explaining each git command |
 | `/reading:paper-interview` | Questions you about a paper, like a fair examiner, to test your understanding   |
 | `/latex:diagnose`          | Finds out why a LaTeX document does not compile and fixes it                    |
+| `/writing:draft-critique`  | Critiques your draft one issue at a time, as a conversation                     |
 
-Each skill lives in a plugin (`git`, `reading`, `latex`) that is installed
+Each skill lives in a plugin (`git`, `reading`, `writing`, `latex`) that is installed
 separately. Claude also picks a skill up on its own when you describe the
 task, e.g. "quiz me on this paper".
 
@@ -24,6 +25,7 @@ In a terminal:
 claude plugin marketplace add tolborg-group/group-skills
 claude plugin install git@tolborg-group
 claude plugin install reading@tolborg-group
+claude plugin install writing@tolborg-group
 claude plugin install latex@tolborg-group
 ```
 

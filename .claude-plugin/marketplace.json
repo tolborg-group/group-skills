@@ -4,7 +4,7 @@
     "name": "Tolborg Group"
   },
   "metadata": {
-    "description": "Shared Claude Code skills for the group: git help, paper reading, LaTeX troubleshooting, and more."
+    "description": "Shared Claude Code skills for the group: git help, paper reading and writing, LaTeX troubleshooting, and more."
   },
   "plugins": [
     {
@@ -21,6 +21,11 @@
       "name": "latex",
       "source": "./plugins/latex",
       "description": "Help with LaTeX, e.g. diagnosing compilation errors."
+    },
+    {
+      "name": "writing",
+      "source": "./plugins/writing",
+      "description": "Help with writing papers, e.g. a conversational critique of your draft, one issue at a time."
     }
   ]
 }

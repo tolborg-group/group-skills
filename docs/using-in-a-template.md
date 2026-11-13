@@ -15,6 +15,7 @@ fit it:
   "enabledPlugins": {
     "git@tolborg-group": true,
     "reading@tolborg-group": true,
+    "writing@tolborg-group": true,
     "latex@tolborg-group": true
   },
   "permissions": {
@@ -45,7 +46,7 @@ cmd = "claude --version > /dev/null || (echo \"Claude Code not found. Install it
 
 [tasks.setup-claude]
 depends-on = ["check-claude"]
-cmd = "claude plugin marketplace add tolborg-group/group-skills && claude plugin install git@tolborg-group && claude plugin install reading@tolborg-group && claude plugin install latex@tolborg-group"
+cmd = "claude plugin marketplace add tolborg-group/group-skills && claude plugin install git@tolborg-group && claude plugin install reading@tolborg-group && claude plugin install writing@tolborg-group && claude plugin install latex@tolborg-group"
 ```
 
 Once skills exist, a launcher task can start one directly, e.g.

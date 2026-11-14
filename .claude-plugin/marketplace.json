@@ -26,6 +26,11 @@
       "name": "writing",
       "source": "./plugins/writing",
       "description": "Help with writing papers, e.g. a conversational critique of your draft, one issue at a time."
+    },
+    {
+      "name": "python",
+      "source": "./plugins/python",
+      "description": "Beginner-friendly help with Python scripts: readable, well-commented, run with uv."
     }
   ]
 }

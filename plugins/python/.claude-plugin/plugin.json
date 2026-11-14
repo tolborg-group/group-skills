@@ -1,0 +1,7 @@
+{
+  "name": "python",
+  "description": "Beginner-friendly help with Python scripts: readable, well-commented, run with uv.",
+  "author": {
+    "name": "Tolborg Group"
+  }
+}

@@ -12,8 +12,9 @@ plugin marketplace.
 | `/reading:paper-interview` | Questions you about a paper, like a fair examiner, to test your understanding   |
 | `/latex:diagnose`          | Finds out why a LaTeX document does not compile and fixes it                    |
 | `/writing:draft-critique`  | Critiques your draft one issue at a time, as a conversation                     |
+| `/python:script`           | Writes or changes a readable, well-commented Python script, run with uv         |
 
-Each skill lives in a plugin (`git`, `reading`, `writing`, `latex`) that is installed
+Each skill lives in a plugin (`git`, `reading`, `writing`, `latex`, `python`) that is installed
 separately. Claude also picks a skill up on its own when you describe the
 task, e.g. "quiz me on this paper".
 
@@ -27,6 +28,7 @@ claude plugin install git@tolborg-group
 claude plugin install reading@tolborg-group
 claude plugin install writing@tolborg-group
 claude plugin install latex@tolborg-group
+claude plugin install python@tolborg-group
 ```
 
 Or, inside Claude Code, run `/plugin` and browse the marketplace.
